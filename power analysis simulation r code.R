@@ -14,7 +14,7 @@
 
 # 3. Using the parameters defined above to build a covariance matrix for the six conditions
 
-# 4. Run the simuluation draw samples from a multivariate normal distribution for each of the six conditions, 
+# 4. Run the simuluation-- draw samples from a multivariate normal distribution for each of the six conditions, 
 # given the population means, standard deviations, and covariance matrix defined in above steps
 
 # 5. Consolidate the simulated data to the shell dataframe
