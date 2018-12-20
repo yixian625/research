@@ -10,12 +10,20 @@
 # 1. Estimate the parameters. Specifically, based on the grand mean and the average standard deviation from the pilot data, 
 # I estimated the population means for the six different conditions, given the anticipated effect sizes.
 
-# 2. Using the parameters defined above
+# 2. Build a "shell" dataframe with the participants' ID, conditions, and simulation/iteration numbers
 
-# (codes adapted from https://cognitivedatascientist.com/2015/12/14/power-simulation-in-r-the-repeated-measures-anova-5/)
-#
+# 3. Using the parameters defined above to build a covariance matrix for the six conditions
+
+# 4. Run the simuluation draw samples from a multivariate normal distribution for each of the six conditions, 
+# given the population means, standard deviations, and covariance matrix defined in above steps
+
+# 5. Consolidate the simulated data to the shell dataframe
+
+# 6. Run ANOVA model on the simulated data for each iteration, and calcualte the proportion of iterations with significant p values.
+# This proportion is the power obtained given the parameters.
 
 
+#########################codes start here ##################################
 
 
 # guess the pupulation means (mu) for all the conditions
