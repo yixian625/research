@@ -2,7 +2,7 @@
 # given my study design and estimated parameters from pilot study.
 
 # Here, I have a 2(Disclosure depth: low vs. high)*3(Similarity: low vs. medium vs. high) repeated measure design
-# All participants goes throng all six conditions (represented by six computerized avatars who disclose different
+# All participants goes through all six conditions (represented by six computerized avatars who disclose different
 # personal information to the participants depending on their specific condition), and rate their liking of all the
 # six avatars/conditions.
 
