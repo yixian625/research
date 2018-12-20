@@ -1,6 +1,22 @@
+# In this file, I created codes to run simulations to determine the number of participants that I need, 
+# given my study design and estimated parameters from pilot study.
 
-#use the package knitr to put all the codes and graphs into one document
-#knitr::opts_chunk$set(echo=TRUE, warning=FALSE, message=FALSE)
+# Here, I have a 2(Disclosure depth: low vs. high)*3(Similarity: low vs. medium vs. high) repeated measure design
+# All participants goes throng all six conditions (represented by six computerized avatars who disclose different
+# personal information to the participants depending on their specific condition), and rate their liking of all the
+# six avatars/conditions.
+
+# The codes below do the following things:
+# 1. Estimate the parameters. Specifically, based on the grand mean and the average standard deviation from the pilot data, 
+# I estimated the population means for the six different conditions, given the anticipated effect sizes.
+
+# 2. Using the parameters defined above
+
+# (codes adapted from https://cognitivedatascientist.com/2015/12/14/power-simulation-in-r-the-repeated-measures-anova-5/)
+#
+
+
+
 
 # guess the pupulation means (mu) for all the conditions
 # estimated mean from pilot data: mean rating across avatars=4.3; mean std=1.5
@@ -117,9 +133,6 @@ df_all= df[rep(seq_len(nrow(df)), nsims), ] # generate a sequence equal the numb
 # sort and name the simulation runs as the index
 df_all$simulation = sort(rep(seq_len(nsims), nrow(df)))
 df_all
-
-
-##################### codes I don't understand ##########
 
 
 # sample the observed data from a multivariate normal distribution
