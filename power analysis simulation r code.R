@@ -96,7 +96,7 @@ mu= c(mean_ld_ls, mean_ld_ms, mean_ld_hs, mean_hd_ls, mean_hd_ms, mean_hd_hs) #e
 sigma= 1.5 # population standard deviation
 rho= 0.5 # correlation between repeated measures (within-subject correlation)
 nsubs= 70 # number of subjects
-nsims= 500 # number of similulations to run
+nsims= 5000 # number of similulations to run
 
 # create the two IV factors
 
@@ -123,15 +123,13 @@ head(df, n=12)
 
 sigma.mat = rep(sigma, 6)
 S.matrix= matrix(sigma.mat, ncol = length(sigma.mat), nrow = length(sigma.mat))
-S.matrix
+
 # 2. calculate covariance between each two conditions
 
 Sigma.matrix <- t(S.matrix) * S.matrix * rho 
-Sigma.matrix
 
 # put the variances on the diagonal
 diag(Sigma.matrix) <- sigma^2
-Sigma.matrix
 
 # Running the simulation
 
