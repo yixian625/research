@@ -180,4 +180,6 @@ colnames(p) = c('Sim','Depth','Interaction')
 
 power = apply(as.matrix(p), 2, 
               function(x) round(mean(ifelse(x < .05, 1, 0) * 100),0))
+              
+cat ("# of Subjects Needed to Achieve the Power Shown Below =", nsubs, "\n")
 power
