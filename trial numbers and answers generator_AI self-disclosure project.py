@@ -59,7 +59,7 @@ questions={
     11: 'qualities in friend',
     12: 'gossip',
     13: 'stressful things',
-    14: 'political positions',
+    14: 'how to unwind',
     15: 'personal qualities',
     16: 'change about yourself'
 }
