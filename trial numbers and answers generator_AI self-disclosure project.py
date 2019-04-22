@@ -49,7 +49,7 @@ questions={
     1: 'favorite season',
     2: 'social media',
     3: 'movie genres',
-    4: 'cruisines',
+    4: 'cuisines',
     5: 'oversea countries',
     6: 'music genres',
     7: 'historical figures',
